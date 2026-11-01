@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aanand Raj | Portfolio</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: #07162c;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 17px 10px;
+  background: #081630;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #00e5ff;
+}
+
+.hero {
+  text-align: center;
+  padding: 55px 18px 75px;
+  background: linear-gradient(135deg, #07162c, #123b68);
+}
+
+.profile {
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30%;
+  border: 4px solid #00e5ff;
+  box-shadow: 0 0 25px #00e5ff80;
+}
+
+h1 {
+  font-size: clamp(32px, 7vw, 48px);
+  margin: 22px 0 12px;
+}
+
+.accent {
+  color: #00e5ff;
+}
+
+.hero p {
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  border-radius: 28px;
+  text-decoration: none;
+  font-weight: bold;
+  background: #00d5df;
+  color: #07162c;
+}
+
+.btn.secondary {
+  background: #1267c5;
+  color: white;
+}
+
+.btn.outline {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+section {
+  padding: 45px 18px;
+  text-align: center;
+  background: #0a1b35;
+}
+
+section h2 {
+  color: #00e5ff;
+  font-size: 29px;
+  margin-bottom: 24px;
+}
+
+.card {
+  max-width: 650px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 18px;
+  background: #132e50;
+  border: 1px solid #00e5ff40;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 650px;
+  margin: auto;
+}
+
+.skill {
+  padding: 20px 10px;
+  border-radius: 14px;
+  background: #132e50;
+  border-bottom: 3px solid #00e5ff;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  background: #050f22;
+}
+
+@media (min-width: 700px) {
+  nav {
+    gap: 28px;
+  }
+
+  .hero {
+    padding-top: 65px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header class="hero" id="home">
+
+  <img class="profile" src="profile.jpg" alt="Aanand Raj">
+
+  <h1>Aanand <span class="accent">Raj</span></h1>
+
+  <p>Data Collection | AI Data Annotation</p>
+  <p>Interested in Data Analytics and Technology</p>
+
+  <div class="actions">
+    <a class="btn" href="#" onclick="window.print();return false;">
+      Print Portfolio
+    </a>
+
+    <a class="btn secondary" href="https://www.linkedin.com/" target="_blank">
+      LinkedIn
+    </a>
+
+    <a class="btn outline" href="#contact">
+      Contact Me
+    </a>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p><strong>B.Com Graduate</strong><br>
+    Krishak College, Dhewdha</p>
+
+    <p>Interested in Artificial Intelligence, Data Collection and Data Analytics.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Professional Skills</h2>
+  <div class="grid">
+    <div class="skill">Data Collection</div>
+    <div class="skill">AI Data Annotation</div>
+    <div class="skill">Robotics Data Collection</div>
+    <div class="skill">Data Analytics – Learning</div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Work Experience</h2>
+  <div class="card">
+    <h3>Sentient X Industries</h3>
+    <p>Robotics Data Collection</p>
+    <p>Experience with humanoid-robot and gripper-based data collection.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3>Personal Portfolio Website</h3>
+    <p>Built with Python, HTML and CSS.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>For professional enquiries, connect through LinkedIn or email.</p>
+    <a class="btn secondary" href="https://www.linkedin.com/" target="_blank">
+      Open LinkedIn
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Aanand Raj · Personal Portfolio
+</footer>
+
+</body>
+</html>
