@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aanand Raj | Portfolio</title>
+<title>Amar | Portfolio</title>
 
 <style>
 * {
@@ -16,7 +15,9 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: white;
-  background: #07162c;
+  /* Profile photo ko background mein lagane ke liye */
+  background: linear-gradient(rgba(7, 22, 44, 0.85), rgba(7, 22, 44, 0.85)), url('profile.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 nav {
@@ -27,7 +28,8 @@ nav {
   flex-wrap: wrap;
   gap: 18px;
   padding: 17px 10px;
-  background: #081630;
+  background: rgba(8, 22, 48, 0.95);
+  backdrop-filter: blur(5px);
 }
 
 nav a {
@@ -43,7 +45,7 @@ nav a:hover {
 .hero {
   text-align: center;
   padding: 55px 18px 75px;
-  background: linear-gradient(135deg, #07162c, #123b68);
+  background: transparent;
 }
 
 .profile {
@@ -102,7 +104,7 @@ h1 {
 section {
   padding: 45px 18px;
   text-align: center;
-  background: #0a1b35;
+  background: transparent;
 }
 
 section h2 {
@@ -116,10 +118,11 @@ section h2 {
   margin: auto;
   padding: 25px;
   border-radius: 18px;
-  background: #132e50;
+  background: rgba(19, 46, 80, 0.85);
   border: 1px solid #00e5ff40;
   line-height: 1.7;
   font-size: 17px;
+  backdrop-filter: blur(5px);
 }
 
 .grid {
@@ -133,14 +136,15 @@ section h2 {
 .skill {
   padding: 20px 10px;
   border-radius: 14px;
-  background: #132e50;
+  background: rgba(19, 46, 80, 0.85);
   border-bottom: 3px solid #00e5ff;
+  backdrop-filter: blur(5px);
 }
 
 footer {
   text-align: center;
   padding: 22px;
-  background: #050f22;
+  background: rgba(5, 15, 34, 0.95);
 }
 
 @media (min-width: 700px) {
@@ -168,9 +172,9 @@ footer {
 
 <header class="hero" id="home">
 
-  <img class="profile" src="profile.jpg" alt="Aanand Raj">
+  <img class="profile" src="profile.jpg" alt="Amar">
 
-  <h1>Aanand <span class="accent">Raj</span></h1>
+  <h1>Amar</h1>
 
   <p>Data Collection | AI Data Annotation</p>
   <p>Interested in Data Analytics and Technology</p>
@@ -238,7 +242,7 @@ footer {
 </section>
 
 <footer>
-  © 2026 Aanand Raj · Personal Portfolio
+  © 2026 Amar · Personal Portfolio
 </footer>
 
 </body>
